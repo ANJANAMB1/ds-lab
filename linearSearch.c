@@ -9,17 +9,21 @@ for(i=0;i<n;i++)
 {
 scanf("%d",&a[i]);
 }
-printf("enter the element to search");
+printf("enter the key");
 scanf("%d",&key);
 for(i=0;i<n;i++)
 {
-if(key=a[i])
+if(a[i]==key)
 {
-printf("Element fount");
+printf("key found");
+f=1;
 break;
 }
+}
+  if(f==1)
+  {
+    printf("element found");
 else
 {
-printf("Element not fount");
-break;
-}}}
+printf("Element not found");
+}}
